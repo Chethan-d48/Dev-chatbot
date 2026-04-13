@@ -1,0 +1,76 @@
+.sidebar{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #eef6f4;
+   padding: 10px 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   box-shadow: 0 0 15px black;
+}
+
+.sidebar  img{
+    width: 20px;
+    
+    
+}
+
+.sidebar .menu{
+    display: block;
+    margin-left: 0px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+}
+.sidebar .plus{
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 50px;
+    font-size: 15px;
+    gap: 20px;
+    cursor: pointer;
+    color: #313f2c;
+     object-fit: cover;
+}
+
+.sidebar .recent-title{
+   margin-top: 30px;
+   margin-bottom: 20px;
+
+}
+
+.sidebar .recent-entry{
+    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #313f2c; 
+    font-size: 15px;
+    gap: 10px;
+
+}
+
+.sidebar .recent-entry:hover{
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px black;
+  transition: all 0.5s;
+  border-radius: 10px;
+
+}
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item{
+    padding: 10px;
+    cursor: pointer;
+}

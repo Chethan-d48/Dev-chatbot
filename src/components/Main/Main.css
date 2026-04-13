@@ -1,0 +1,212 @@
+.main{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;   
+}
+
+.main .nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1200px;
+   padding: 20px;
+   font-size: 20px;
+   color: #313f2c;
+   cursor: pointer;
+}
+
+
+.nav img{
+    width: 60px;
+    height: 50px;
+    border: 5px solid #f3ce90;
+    border-radius: 50%;
+    
+}
+
+.main-container{
+    margin-left: 200px;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.main .greet{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    padding: 50px;
+    margin-left: -50px;
+    color: #313f2c;
+}
+
+.main .greet span{
+    background: linear-gradient(45deg, red, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 0px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+.main .cards .card{
+    background: linear-gradient(45deg, #77a89b,white,#eef6f4);
+    padding: 15px;
+    border-radius: 5px;
+    width: 350px;
+    height: 120px;
+    margin-left: -18px;
+    position: relative;
+    
+}
+
+.main .cards .card img{
+    width: 55px;
+    height: 45px;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #faebd7;
+    
+}
+
+.main .card p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main .cards .card:hover{
+    border-radius: 10px;
+    background: linear-gradient(45deg, #f4be77,#f3dab9,#faebd7);
+    transition: all 0.5s;color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.main-value{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    padding: 0px 20px;
+    margin: auto;
+    margin-left: 125px;
+}
+
+.main-value .search-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   background-color: #d8e6e2;  
+   margin-left: -23px;
+   margin-right: -15px;
+   border-radius: 50px;  
+   
+}
+
+.main-value .search-box ::placeholder{
+    background-color: #d8e6e2; 
+ 
+}
+
+.main-value .search-box input{
+    margin-left: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.search-box img{
+    width: 30px;
+    cursor: pointer;
+    padding: 5px;
+    gap: 15px;
+}
+
+
+.main .bottom-info{
+   font-size: 15px;
+   text-align: center;
+   padding: 10px;
+   font-weight: 300;
+}
+
+.result img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.result {
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    max-width: 80%;
+  
+}
+
+.result::-webkit-scrollbar {
+  display: none;
+}
+
+.result-title{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.result img{
+    width: 40px;
+    background-color: skyblue;
+    border-radius: 50%;
+}
+
+.result-data{
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 15px;
+    color: black;
+}
+
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr{
+   border-radius: 5px; 
+   background: linear-gradient(45deg, #9bbfb6, #87ceeb, white);
+   background-size: 800px 50px;
+   height: 20px;
+   animation: loader 3s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+.result-data p{
+    font-weight: 300;
+    line-height: 1.5;
+}
